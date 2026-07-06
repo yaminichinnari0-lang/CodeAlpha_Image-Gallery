@@ -1,0 +1,62 @@
+body{
+    font-family: Arial;
+    text-align: center;
+    background-image: radial-gradient(white,purple);
+}
+
+h1{
+    margin-top: 20px;
+    font-size: 50px;
+    font-style:italic;
+}
+
+.buttons{
+    margin: 20px;
+}
+
+button{
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: aqua;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image img{
+    width: 300px;
+    height: 200px;
+    margin: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+
+.image img:hover{
+    transform: scale(1.05);
+}
+/* Responsive Design */
+
+@media(max-width:600px){
+
+    .image img{
+        width: 70%;
+        height: auto;
+    }
+
+    #lightbox img{
+        width: 90%;
+    }
+}
